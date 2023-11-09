@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Suara Hewan</title>
+</head>
+<body>
+    <script>
+        const namaHewan = prompt("Masukkan nama hewan (contoh: kucing atau anjing):").toLowerCase();
+
+        let suaraHewan = "";
+
+        switch (namaHewan) {
+            case "kucing":
+                suaraHewan = "meong";
+                break;
+            case "anjing":
+                suaraHewan = "guguk";
+                break;
+            default:
+                suaraHewan = "Suara hewan tidak ditemukan";
+        }
+
+
+        if (suaraHewan !== "") {
+            alert(`Suaranya ${suaraHewan}`);
+        } 
+    </script>
+    </script>
+</body>
+</html>

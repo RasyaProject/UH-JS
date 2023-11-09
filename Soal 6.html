@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Jenis Smartphone</title>
+</head>
+<body>
+    <label for="inputText">Masukkan spesifikasi smartphone :</label>
+    <input type="text" id="inputText">
+    <button onclick="cekSpesifikasi()">Cek</button>
+    <p id="output"></p>
+
+    <script>
+        function cekSpesifikasi() {
+            const inputText = document.getElementById("inputText").value.toLowerCase();
+            let outputText = "";
+
+            if (inputText.includes("10mp")) {
+                outputText = "Kamera";
+            } else if (inputText.includes("128gb")) {
+                outputText = "Memori";
+            } else {
+                outputText = "Tidak ada informasi yang sesuai";
+            }
+
+            document.getElementById("output").innerText = outputText;
+        }
+    </script>
+</body>
+</html>
